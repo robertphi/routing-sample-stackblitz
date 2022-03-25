@@ -1,0 +1,13 @@
+<div>This is Module A</div>
+
+
+<div *ngIf="!canAccessModuleB">
+  You cannot access ModuleB.
+</div>
+
+<div *ngIf="canAccessModuleB">
+  You can access ModuleB.
+  <div>
+    <a [routerLink]="['../ModuleB']">Click here to go to ModuleB </a>
+  </div>
+</div>
